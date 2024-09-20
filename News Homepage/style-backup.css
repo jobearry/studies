@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "InterReg";
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "InterBold";
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+  font-family: "InterBoldX";
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+:root {
+  --soft-red: rgb(241, 94, 80);
+  --off-white: rgb(255, 253, 250);
+  --soft-orange: rgb(233, 171, 83);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "InterReg", sans-serif;
+}
+
+/*NAV MENU*/
+
+nav {
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  background: white;
+}
+nav > div {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav > div button {
+  border: none;
+  background: white;
+}
+.logo {
+  width: 4rem;
+}
+.nav-link-container {
+  display: none;
+}
+
+.burger {
+  margin: auto 1px;
+}
+.burger > img {
+  width: 3rem;
+}
+
+/*HEADLINE*/
+#home {
+  height: 100vh;
+  margin-top: 5rem;
+  border: none;
+}
+.headline-img-container {
+  margin: 1rem;
+}
+.headline-img-container > img {
+  height: 28rem;
+  width: 100%;
+}
+.headline-img-mobile {
+  object-fit: contain;
+}
+.headline-img-desktop {
+  display: none;
+}
+
+.headline-text-content {
+  margin: 0 1rem;
+}
+.headline-text-content > h1 {
+  width: 25rem;
+  margin-top: -1rem;
+  line-height: 3rem;
+  font-size: 3.25rem;
+  font-family: "InterBoldX", sans-serif;
+}
+.headline-text-content > div > p {
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--dark-grayish-blue);
+}
+.headline-text-content > div > button {
+  margin-top: 2rem;
+  width: 14rem;
+  height: 3.75rem;
+
+  font-family: "InterBold", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+
+  border: none;
+  color: var(--off-white);
+  background: var(--soft-red);
+}
+/*SECTION: NEW*/
+#new {
+  height: 65vh;
+  margin-top: 8rem;
+  border: none;
+}
+
+#new > div {
+  height: 38.25rem;
+  margin: 1rem;
+
+  background: var(--very-dark-blue);
+}
+#new > div > h2 {
+  margin: 0 1.75rem;
+  padding-top: 1.75rem;
+
+  font-size: 2.5rem;
+  font-family: "InterBold", sans-serif;
+  color: var(--soft-orange);
+}
+
+#new > div > div {
+  height: 11rem;
+  margin: 0 1.75rem;
+  margin-top: 0.25rem;
+  padding-top: 1.25rem;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+
+  display: grid;
+}
+#new > div > div:last-of-type {
+  border: none;
+}
+
+.text-container {
+  font-size: 1.25rem;
+}
+
+.text-container > h3 {
+  margin: 0.75rem 0;
+  font-size: 1.7rem;
+  font-family: "InterBold", sans-serif;
+  color: var(--off-white);
+}
+.text-container > p {
+  line-height: 2rem;
+  color: var(--dark-grayish-blue);
+}
+
+/*SECTION: POPULAR*/
+#popular {
+  margin-top: 11rem;
+}
+#popular > div {
+  margin: 0.75rem 1rem;
+  display: flex;
+  height: 13rem;
+}
+#popular > div > img {
+  height: 11rem;
+}
+.popular-text-content {
+  margin-left: 2rem;
+}
+.popular-text-content > h3,
+.popular-text-content > h4 {
+  font-family: "InterBold", sans-serif;
+}
+.popular-text-content > h3 {
+  margin: 0.25rem auto 1rem auto;
+  font-size: 2.5rem;
+  color: var(--dark-grayish-blue);
+}
+.popular-text-content > h4 {
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.popular-text-content > p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  color: var(--dark-grayish-blue);
+}
+@media (min-width: 1250px) {
+  nav > div {
+    margin: 2rem 10rem 0rem 11rem;
+  }
+  nav > div button {
+    display: none;
+  }
+  main {
+    margin: 1rem 10rem;
+  }
+  .nav-link-container {
+    display: contents;
+  }
+  .nav-link-container > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30rem;
+    list-style: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    height: 100%;
+  }
+  #home {
+    width: 51rem;
+    height: 32rem;
+    margin-top: 4.5rem;
+  }
+  .headline-img-container {
+    height: 16rem;
+  }
+  .headline-img-container > img {
+    height: 100%;
+  }
+  .headline-img-desktop {
+    display: block;
+  }
+  .headline-img-mobile {
+    display: none;
+  }
+  .headline-text-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .headline-text-content > h1 {
+    margin-top: 1rem;
+    width: 20rem;
+    font-size: 3.75rem;
+    line-height: 3.5rem;
+  }
+  .headline-text-content > div {
+    width: 21.5rem;
+    height: 10rem;
+
+    margin-top: -0.25rem;
+  }
+  .headline-text-content > div > p {
+    margin-top: auto;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .headline-text-content > div > button {
+    width: 12rem;
+    height: 3rem;
+    font-size: 0.9rem;
+    margin-top: 2.5rem;
+  }
+  #new {
+    width: auto;
+    height: 32rem;
+    margin-top: 4.5rem;
+  }
+  #new > div {
+    height: 30.25rem;
+    margin: 0.75rem auto;
+    width: 22rem;
+    background: var(--very-dark-blue);
+  }
+
+  #new > div > h2 {
+    font-size: 2rem;
+  }
+  #new > div > div {
+    height: 8rem;
+    margin: 0 1.75rem;
+    margin-top: 0.5rem;
+    padding-top: 0;
+    border-bottom: 1px solid var(--dark-grayish-blue);
+
+    display: grid;
+  }
+  #new > div > div:last-of-type {
+    border: none;
+  }
+
+  .text-container {
+    font-size: 0.9rem;
+  }
+
+  .text-container > h3 {
+    margin: 0.75rem 0;
+    font-size: 1.25rem;
+    font-family: "InterBold", sans-serif;
+    color: var(--off-white);
+  }
+  .text-container > p {
+    margin-top: -0.5rem;
+    width: 18rem;
+  }
+
+  #popular {
+    grid-column: 1/3;
+    display: flex;
+    height: 11.3rem;
+    margin-top: auto;
+  }
+  #popular > div {
+    margin: 2.5rem 1rem;
+    display: flex;
+    height: 7rem;
+  }
+  #popular > div > img {
+    height: 100%;
+  }
+  .popular-text-content > h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+  }
+  .popular-text-content > h4 {
+    color: var(--very-dark-blue);
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .popular-text-content > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    color: var(--dark-grayish-blue);
+    width: 15rem;
+  }
+}
