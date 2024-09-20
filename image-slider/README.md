@@ -3,7 +3,7 @@
 An image slider using images from [Lorem Picsum](https://picsum.photos/)
 
 ## Screenshot
-![](/assets/img-slider-screenshot.png)
+![](./assets/img-slider-screenshot.png)
 
 ## Built with
 
