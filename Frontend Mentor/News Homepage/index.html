@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md fixed-top navbar-light p-4">
+      <div class="container-xxl">
+        <a href="#" class="navbar-brand">
+          <img class="logo" src="./assets/images/logo.svg" alt="this-logo" />
+        </a>
+
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <img src="./assets/images/icon-menu.svg" alt="" />
+          </span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="navbar"
+        >
+          <ul class="navbar-nav mt-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Home </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">New </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Popular </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Trending </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Categories </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="row">
+        <section class="col-xl-8 col-lg-12" id="home">
+          <div class="">
+            <div class="headline-img-container">
+              <img
+                class="d-lg-none img-fluid p-4 mobile-headline"
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="m-puzzle-image-headline"
+                style="object-fit: contain"
+              />
+              <img
+                class="d-none d-lg-block d-headline-img-desktop"
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="d-puzzle-image-headline"
+              />
+            </div>
+            <div class="headline-text-content mx-4 mx-lg-0 d-xl-flex mt-lg-4">
+              <h1>The Bright Future of Web 3.0?</h1>
+
+              <div class="mx-lg-5">
+                <p class="mt-lg-0">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <button>Read more</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="col-xl-4 col-lg-12 mt-5" id="new">
+          <div class="m-3">
+            <h2 class="mx-3 mt-3">New</h2>
+            <div>
+              <div class="text-container mx-3 mt-4">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </div>
+            </div>
+            <div>
+              <div class="text-container mx-3">
+                <h3>The Downsides of AI Artistry</h3>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="text-container mx-3">
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="col-lg-12" id="popular">
+          <div class="mx-4 d-lg-flex d-md-block">
+            <div class="d-flex my-lg-4">
+              <img
+                class=""
+                src="./assets/images/image-retro-pcs.jpg"
+                alt="retro-pc"
+              />
+              <div class="popular-text-content ms-4">
+                <h3>01</h3>
+                <h4>Reviving Retro PCs</h4>
+                <p>What happens when old PCs are given modern upgrades?</p>
+              </div>
+            </div>
+            <div class="d-flex my-4">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                alt="laptop-keyboard"
+              />
+              <div class="popular-text-content ms-4">
+                <h3>02</h3>
+                <h4>Top 10 Laptops of 2022</h4>
+                <p>Our best picks for various needs and budgets.</p>
+              </div>
+            </div>
+            <div class="d-flex my-4">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                alt="controller-in-the-air"
+              />
+              <div class="popular-text-content ms-4">
+                <h3>03</h3>
+                <h4>The Growth of Gaming</h4>
+                <p>How the pandemic has sparked fresh opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
