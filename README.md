@@ -24,7 +24,7 @@ Welcome to my study, where my programming activities, challenges lies through th
 | :---                 |    :----:   | 
 | Image Slider | [Live Demo](https://joby-image-slider.netlify.app/) |   
 | Number System Convert | [Live Demo](https://convert-number-system.netlify.app/) |               
-| Simple VB6 Calculator| [View Program](./Simple%20VB6%20Calculator/) |
+| Simple VB6 Calculator| [View Program](./Learning%20by%20doing/Simple%20VB6%20Calculator/) |
 
 ---
 ---
