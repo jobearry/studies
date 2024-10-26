@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    background: #1f1f1f;
+    color: #afafaf;
+}
+
+body *{
+    margin: .75rem;
+}
+
+body ul{
+    margin-left: 1.5rem;
+}
+
+body a {
+    text-decoration: none;
+    color: #e4a36f;
+}
