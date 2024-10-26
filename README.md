@@ -3,14 +3,28 @@
 
 Welcome to my study, where my programming activities, challenges lies through the course of my developer journey. 
 
-| Learning Materials   | Links | 
+ **Learning Materials**
+---
+
+| The Odin Project   | Links | 
 | :---                 |    :----:   | 
-| The Odin Project     | [View](./The%20Odin%20Project/) |        
-| Front-end Mentor     | [View](./Frontend%20Mentor) |   
+| Plain Blog Article (HTML)    | [Live Demo](https://top-html-blog-article.netlify.app/) |        
+| Project: Recipes (Pastamiya!) (HTML)    | [Live Demo](https://top-pastamiya.netlify.app/) |         
 
-**Learning by doing**
--
-- [Simple VB6 Calculator](./Simple%20VB6%20Calculator/)
+---
 
+| Front-end Mentor | Links |
+| :---                 |    :----:   |  
+| Product Preview Card Component     | [Live Demo](https://fem-challenge-product-preview-card.netlify.app/) |        
+| QR Code Component   | [Live Demo](https://fem-challenge-qr-code-component.netlify.app/) | 
+| News Homepage   | [Live Demo](https://fem-challenge-news-homepage.netlify.app/) |    
 
-- **Activities inspired from tutorials** 
+---
+| Learning by doing    |  | 
+| :---                 |    :----:   | 
+| Image Slider | [Live Demo](https://joby-image-slider.netlify.app/) |   
+| Number System Convert | [Live Demo](https://convert-number-system.netlify.app/) |               
+| Simple VB6 Calculator| [View Program](./Simple%20VB6%20Calculator/) |
+
+---
+---
