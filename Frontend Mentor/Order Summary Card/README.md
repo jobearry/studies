@@ -33,7 +33,7 @@ This is a solution to the [Order summary component challenge on Frontend Mentor]
 ### Links
 
 - Solution URL: https://github.com/jobearry/fem-order-summary
-- Live Site URL: https://fem-order-sumarry-card.netlify.app/
+- Live Site URL: https://jobytech-fem-order-summary-card.netlify.app/
 - Watch me do this in timelapse at: https://youtu.be/hGF59A81Mlg
 
 ## My process
