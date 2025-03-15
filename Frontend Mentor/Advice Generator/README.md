@@ -64,6 +64,6 @@ This challege helped me learn using logic or state management using React. Made 
 - [GitHub](https://github.com/jobearry)
 - [CodePen](https://codepen.io/jobytech)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/jobearry)
-- [Threads](https://www.twitter.com/joby.tech)
+- [Threads](https://www.threads.net/@joby.tech)
 - [Youtube](https://www.youtube.com/@Jobearryy)
 
