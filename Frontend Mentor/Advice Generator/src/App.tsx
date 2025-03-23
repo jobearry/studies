@@ -5,12 +5,10 @@ import Footer from './footer/Footer'
 
 function App() {
   return (
-    <>
-      <div className='flex flex-col justify-between place-items-center'>
-        <Body></Body>
-        <Footer></Footer>
-      </div>  
-    </>
+    <div className='flex flex-col justify-center place-items-center h-screen'>
+      <Body></Body>
+      <Footer></Footer>
+    </div>  
   )
 }
 

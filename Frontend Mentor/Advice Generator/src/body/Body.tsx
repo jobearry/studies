@@ -25,15 +25,15 @@ const Body = () => {
   }
   
   return (
-    <section className="rounded-lg flex card-bg
-      flex-col justify-between place-items-center 
-      md:w-3/6 w-5/6">
+    <section className="rounded-lg flex card-bg m-10 max-w-[27rem]
+      flex-col justify-between place-items-center">
         <p className="font-manrope text-xs font-semibold tracking-widest
          text-green-300 my-5">
-          ADVICE #{data !== undefined? data?.slip.id: "00"}
+          ADVICE #{data !== undefined? data?.slip.id: "117"}
         </p>
-        <p className="font-bold text-2xl mx-8 m-5">
-          {data !== undefined? data?.slip.advice: "Click the dice to generate advice"}
+        <p className="font-bold text-2xl mx-8 m-5 text-center">
+          {data !== undefined? data?.slip.advice: 
+            "It is easy to sit up ang take notice, whats difficult is getting up and taking action"}
         </p>
         
         <img className='my-5 mb-0' src={divider_m} alt="" />
