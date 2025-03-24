@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution](https://github.com/jobearry/studies/tree/main/Frontend%20Mentor/Calculator%20App)
+- [Live Site ](https://jb-fem-calc.vercel.app/)
 
 ## My process
 
@@ -65,6 +65,9 @@ On this part, I find easier using Angular's @Input, @Output, and EventEmitter
 
 I want to improve more on using tailwind, especially on adding themes and maybe animations.
 For react, I want to fully grasp the data management techniques, similar to NgRx in angular.
+
+Calculator logic not yet implemented here. Will soon work on it
+UI and Themes: already OK!
 
 ### Useful resources
 
