@@ -18,6 +18,9 @@ Welcome to my study, where my programming activities, challenges lies through th
 | Product Preview Card Component     | [Live Demo](https://fem-challenge-product-preview-card.netlify.app/) |        
 | QR Code Component   | [Live Demo](https://fem-challenge-qr-code-component.netlify.app/) | 
 | News Homepage   | [Live Demo](https://fem-challenge-news-homepage.netlify.app/) |    
+| Order Summary Component   | [Live Demo](https://jobytech-fem-order-summary-card.netlify.app/) |    
+| Advice Generator App   | [Live Demo](https://jobytech-fem-advice-generator.vercel.app/) |    
+| Calculator App   | [Live Demo](https://jb-fem-calc.vercel.app/) |    
 
 ---
 | Learning by doing    |  | 
