@@ -47,8 +47,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 - I learned how to create @themes using TailwindCSS. 
