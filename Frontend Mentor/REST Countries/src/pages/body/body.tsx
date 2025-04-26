@@ -15,8 +15,8 @@ interface BodyProps {
 
 export const Body = ({ initTheme }: BodyProps) => {
   const [data, setData] = useState<Country[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
+  // const [error, setError] = useState<string | null>(null);
+  // const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const getAllData = async () => {
@@ -25,14 +25,15 @@ export const Body = ({ initTheme }: BodyProps) => {
         console.log("🚀 ~ getAllData ~ result:", result)
         setData(result);
       } catch (err) {
-        if (err instanceof Error) {
-          setError(err.message);
-        } else {
-          setError("An unknown error occurred");
-        }
-      } finally {
-        setLoading(false);
-      }
+        // if (err instanceof Error) {
+        //   setError(err.message);
+        // } else {
+        //   setError("An unknown error occurred");
+        // }
+      } 
+      // finally {
+      //   setLoading(false);
+      // }
     };
 
     getAllData();
