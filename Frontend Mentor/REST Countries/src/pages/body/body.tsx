@@ -38,8 +38,8 @@ export const Body = ({ initTheme }: BodyProps) => {
     getAllData();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  // if (loading) return <div>Loading...</div>;
+  // if (error) return <div>Error: {error}</div>;
 
   return (
     <section
