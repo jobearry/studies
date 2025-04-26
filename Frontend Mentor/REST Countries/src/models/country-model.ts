@@ -1,11 +1,12 @@
 export class Country{
   constructor(
-    public name: string,
+    public name: Name,
     public topLevelDomain: string[],
     public alpha2Code: string,
     public alpha3Code: string,
     public callingCodes: string[],
     public capital: string,
+    public cca3: string,
     public altSpellings: string[],
     public subregion: string,
     public region: string,
@@ -30,6 +31,7 @@ export class Country{
     this.alpha3Code = alpha3Code
     this.callingCodes = callingCodes
     this.capital = capital
+    this.cca3 = cca3
     this.altSpellings = altSpellings
     this.subregion = subregion
     this.region = region
@@ -49,7 +51,19 @@ export class Country{
     this.independent = independent
   }
 }
-
+export interface Name{
+  common: string,
+  nativeName: NativeName
+  official: string
+}
+export interface NativeName{
+  eng: INativeName,
+  tsn: INativeName
+}
+export interface INativeName{
+  common: string
+  official: string
+}
 export interface Flag{
   svg: string,
   png: string

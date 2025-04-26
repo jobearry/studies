@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Body } from './components/body/body'
+import { Body } from './pages/body/body'
 
 function App() {
   const [currentTheme, setTheme] = useState("dark")

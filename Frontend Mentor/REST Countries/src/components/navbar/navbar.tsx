@@ -19,7 +19,7 @@ export const Navbar: React.FC<NavProps> = ({initTheme}) => {
     }
   }
   return (
-    <section className="flex justify-between place-items-center h-[4em] shadow shadow-gray-300
+    <section className="flex justify-between place-items-center h-[4rem] shadow shadow-gray-300
     bg-white 
       md:justify-between 
       dark:bg-[#2b3742] dark:shadow-[#1d2832]

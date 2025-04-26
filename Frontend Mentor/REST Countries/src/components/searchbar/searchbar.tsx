@@ -5,7 +5,7 @@ export const SearchBar = () => {
   return (
     <div className="h-[3rem] flex justify-center place-items-center
     mx-6 my-8 shadow shadow-gray-300 bg-white
-    dark:bg-[#2b3742] dark:shadow-[#1d2832]
+    dark:bg-[#2b3742] dark:shadow-[#1d2832] sm:min-w-[40%]
     ">
       <div className="w-20 h-full flex justify-center place-items-center">
         <i className="fa-solid fa-magnifying-glass "></i>
@@ -15,7 +15,8 @@ export const SearchBar = () => {
           className="w-full outline-0"
           type="text" id="" 
           value={text} 
-          onChange={(e) => setText(e.target.value)}/>
+          onChange={(e) => setText(e.target.value)}
+          onClick={() => setText("")}/>
       </div>
     </div>
   )
