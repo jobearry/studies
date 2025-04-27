@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import { useState } from "react"
 
 interface NavProps {
   initTheme: (theme:string) => void
 }
 
-export const Navbar: React.FC<NavProps> = ({initTheme}) => {
+export const Navbar = ({initTheme}:NavProps) => {
   const [currentTheme, setTheme] = useState<string>("dark");
   const [iconType, setIconType] = useState<string>("solid")
   const changeTheme = (value: string): void => {
