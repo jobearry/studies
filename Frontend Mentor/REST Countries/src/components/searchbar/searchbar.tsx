@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export const SearchBar = () => {
-  const [text, setText] = useState("Search for a country...");
+  const [text, setText] = useState("");
   return (
     <div className="h-[3rem] flex justify-center place-items-center
     mx-6 my-8 shadow shadow-gray-300 bg-white
@@ -15,6 +15,7 @@ export const SearchBar = () => {
           className="w-full outline-0"
           type="text" id="" 
           value={text} 
+          placeholder="Search for a country..."
           onChange={(e) => setText(e.target.value)}
           onClick={() => setText("")}/>
       </div>
