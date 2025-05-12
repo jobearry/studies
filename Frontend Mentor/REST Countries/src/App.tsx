@@ -9,8 +9,11 @@ function App() {
   }
   return (
     <section className={`${currentTheme} font-nunito text-black
-    dark:text-white dark:bg-[#1f2d36] bg-white` }>
+    dark:text-white dark:bg-[#1f2d36] bg-white h-screen`}>
       <Body initTheme={initTheme}></Body>
+
+    
+
     </section>
   )
 }

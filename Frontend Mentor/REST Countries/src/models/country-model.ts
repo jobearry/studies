@@ -65,6 +65,7 @@ export interface INativeName{
   official: string
 }
 export interface Flag{
+  alt: string,
   svg: string,
   png: string
 }

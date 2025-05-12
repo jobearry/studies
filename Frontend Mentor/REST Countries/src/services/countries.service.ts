@@ -27,3 +27,17 @@ export const fetchAllRegion = async <T>(endpoint: string, field: string): Promis
     throw error;
   }
 };
+
+export const fetchCountry = async <T>(endpoint: string, field: string): Promise<T> => {
+  try {
+    const response = await fetch(`${root}/${endpoint}/${field}`);
+    if (!response.ok) {
+      throw new Error(`Error fetching data: ${response.statusText}`);
+    }
+    // const data: T = await response.json();
+    return await response.json() as T;
+  } catch (error) {
+    console.error(error);
+    throw error;
+  }
+};

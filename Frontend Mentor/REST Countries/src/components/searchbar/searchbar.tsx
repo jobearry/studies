@@ -1,7 +1,16 @@
-import { useState } from "react";
+import { useState } from "react"
 
-export const SearchBar = () => {
-  const [text, setText] = useState("");
+interface SearchBarProps {
+  onSearch: (query: string) => void;
+}
+export const SearchBar = ({onSearch}: SearchBarProps) => {
+  const [input, setInput] = useState<string>("")
+
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setInput(value);
+    onSearch(value); // Call parent function with current input
+  };
   return (
     <div className="h-[3rem] flex justify-center place-items-center
     mx-6 my-8 shadow shadow-gray-300 bg-white
@@ -14,10 +23,9 @@ export const SearchBar = () => {
         <input 
           className="w-full outline-0"
           type="text" id="" 
-          value={text} 
+          value={input} 
           placeholder="Search for a country..."
-          onChange={(e) => setText(e.target.value)}
-          onClick={() => setText("")}/>
+          onChange={handleChange}/>
       </div>
     </div>
   )
