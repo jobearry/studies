@@ -12,11 +12,11 @@ type CountryCard = {
 export const Card = ({CountryName, Population, Region, Capital, Flag}: CountryCard) => {
   return (
     <div className="h-[27.5rem] shadow shadow-gray-300 bg-white
-      dark:bg-[#2b3742] dark:shadow-[#1d2832]">
+      dark:bg-[#2b3742] dark:shadow-[#1d2832] rounded-md">
       <div>
         <img src={Flag} 
           className={`w-full h-auto ${CountryName === "Nepal" ? 
-            "object-contain" : "object-cover"} aspect-[3/2]`} 
+            "object-contain" : "object-cover"} aspect-[3/2] rounded-md`} 
           alt={`Flag of ${CountryName}`} />
       </div>
       <div className="mx-8 mt-10 grid grid-cols-1 gap-5">

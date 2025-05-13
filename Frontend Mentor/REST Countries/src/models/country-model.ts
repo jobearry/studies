@@ -19,11 +19,12 @@ export class Country{
     public nativeName: string,
     public numericCode: string,
     public flags: Flag,
-    public currencies: string[],
+    public currencies: any,
     public flag: string, //svg format
     public regionalBlocs: RegionalBlocs[],
     public cioc: string,
-    public independent: boolean
+    public independent: boolean,
+    public languages: Language
   ){
     this.name = name
     this.topLevelDomain = topLevelDomain
@@ -77,10 +78,12 @@ export interface Currency{
 }
 
 export interface Language{
-  "iso639_1": string,
-  "iso639_2": string,
-  "name": string,
-  "nativeName": string
+  // "iso639_1": string,
+  // "iso639_2": string,
+  // "name": string,
+  // "nativeName": string
+  eng: string,
+  tzn: string
 }
 
 export interface Transalation{
