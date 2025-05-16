@@ -24,7 +24,7 @@ export const Card = ({CountryName, Population, Region, Capital, Flag}: CountryCa
         <div className="grid grid-cols-1 gap-1">
           <p>
             <span className="font-bold">Population: </span>
-            {Population}
+            {Population.toLocaleString()}
           </p>
           <p>
             <span className="font-bold">Region: </span>
