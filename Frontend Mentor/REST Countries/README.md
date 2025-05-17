@@ -59,7 +59,9 @@ I want to improve my use of React Hooks, and how to structure it properly, along
 
 ## Author
 
+- [Personal Website](https://dev-jobearry.online/#home)
 - [GitHub](https://github.com/jobearry)
-- [Portfolio](https://jobry.online)
-- [Youtube](https://www.youtube.com/@dev.jobryy)
+- [CodePen](https://codepen.io/jobytech)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/jobearry)
+- [Threads](https://www.threads.net/@joby.tech)
+- [Youtube](https://www.youtube.com/@Jobearryy)

@@ -31,8 +31,8 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ### Links
 
-- Solution URL: https://github.com/raszpberry/WebDevJourney-FrontEndMentor/tree/main/FrontEndMentor-3
-- Live Site URL: https://fem-challenge-news-homepage.netlify.app/
+- [Solution URL](./)
+- [Live Site URL](https://fem-challenge-news-homepage.netlify.app/)
 
 ## My process
 
@@ -63,9 +63,9 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 
 ## Author
 
-- [Personal Website](https://raszpberry.github.io/rasz-web/#home)
-- [GitHub](https://github.com/raszpberry)
-- [CodePen](https://codepen.io/raszpberry)
-- [Frontend Mentor](https://www.frontendmentor.io/profile/raszpberry)
-- [Twitter](https://www.twitter.com/traszty)
-- [Youtube](https://www.youtube.com/channel/UCoPKWMX2adD4bNw2njUdhBQ)
+- [Personal Website](https://dev-jobearry.online/)
+- [GitHub](https://github.com/jobearry)
+- [CodePen](https://codepen.io/jobytech)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/jobearry)
+- [Threads](https://www.threads.net/@joby.tech)
+- [Youtube](https://www.youtube.com/@Jobearryy)

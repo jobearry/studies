@@ -38,10 +38,9 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Author
 
-- [Personal Website](https://raszpberry.github.io/rasz-web/#home)
-- [GitHub](https://github.com/raszpberry)
-- [CodePen](https://codepen.io/raszpberry)
-- [Frontend Mentor](https://www.frontendmentor.io/profile/raszpberry)
-- [Twitter](https://www.twitter.com/traszty)
-- [Youtube](https://www.youtube.com/channel/UCoPKWMX2adD4bNw2njUdhBQ)
-
+- [Personal Website](https://dev-jobearry.online/#home)
+- [GitHub](https://github.com/jobearry)
+- [CodePen](https://codepen.io/jobytech)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/jobearry)
+- [Threads](https://www.threads.net/@joby.tech)
+- [Youtube](https://www.youtube.com/@Jobearryy)
