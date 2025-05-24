@@ -1,1 +1,58 @@
-<router-outlet></router-outlet>
+<section class="font-jakarta">
+  <div class="border p-7 h-screen">
+    <form class="flex flex-col gap-10">
+      <div class="flex flex-col">
+        <h1 class="font-bold text-[2rem]">Mortgage Calculator</h1>
+        <p class="underline text-gray-400 text-xl">Clear All</p>
+      </div>
+
+      <!-- <div class="border flex flex-col gap-5"> -->
+        <div class="flex flex-col gap-1">
+          <label for="mortgage-amount" class="text-gray-500 text-2xl">Mortage Amount</label>
+          <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+            <div class="bg-[#9fc7ec] py-4 px-8 rounded-l-md text-2xl">£</div>
+            <input class="w-full outline-0 px-4 text-2xl" type="text" name="mortgage-amount" #mortageAmountInput>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <div class="grid gap-1">
+            <label for="mortgage-term" class="text-gray-500 text-2xl">Mortage Term</label>
+            <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+              <input class="w-full outline-0 px-4 text-2xl" type="text" name="mortgage-term" #mortageTermInput>
+              <div class="bg-[#9fc7ec] py-4 px-8 rounded-r-md text-2xl">years</div>
+            </div>
+          </div>
+          <div class="grid gap-1">
+            <label for="interest-rate" class="text-gray-500 text-2xl">Interest Rate</label>
+            <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+              <input class="w-full outline-0 px-4 text-2xl" type="text" name="interest-rate" #interestRateInput>
+              <div class="bg-[#9fc7ec] py-4 px-8 rounded-r-md text-2xl">%</div>
+            </div>
+          </div>
+          
+        </div>
+
+      <div class="grid">  
+        <label class="text-gray-500 text-2xl">Mortgage Type:</label>
+        <div class="my-2 flex border rounded-md hover:outline-[1.5px] cursor-pointer p-5 gap-3 active:outline-[1.5px]">
+          <input class="border h-full w-6" type="radio" id="repayment" name="mortgageType" value="fixed">
+          <label class="w-full rounded-r-md text-[1.5rem]" for="fixed">Repayment</label>
+        </div>
+        <div class="my-2 flex border rounded-md hover:outline-[1.5px] cursor-pointer p-5 gap-3 active:outline-[1.5px]">
+          <input class="border h-full w-6" type="radio" id="interest" name="mortgageType" value="variable">
+          <label class="w-full rounded-r-md text-[1.5rem]" for="variable">Interest Only</label>
+        </div>
+      </div>
+
+      <button type="submit" 
+        class="bg-[#d7da2f] text-2xl font-semibold flex p-5 rounded-full items-center justify-center gap-3 hover:bg-[#f1f381]">
+          <img src="assets/images/icon-calculator.svg" alt="calculator">
+          Calculate Repayments
+      </button>
+    </form>
+    <div>
+      
+    </div>
+  </div>
+</section> 
