@@ -1,5 +1,5 @@
 {
-  "name": "mortgage-repayment-app",
+  "name": "app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
