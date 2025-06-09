@@ -1,6 +1,6 @@
 <section class="font-jakarta">
-  <div class="p-7 h-fit">
-    <form class="flex flex-col gap-10">
+  <div class="flex flex-col  h-fit">
+    <form class="flex flex-col gap-10 px-7 py-10">
       <div class="flex flex-col">
         <h1 class="font-bold text-[2rem]">Mortgage Calculator</h1>
         <a href="" ><p class="underline text-gray-400 text-xl">Clear All</p></a>
@@ -15,6 +15,7 @@
               class="w-full outline-0 px-4 text-2xl font-bold" 
               type="text"
               pattern="[0-9]*" 
+              inputmode="numeric"
               (keypress)="manageInput($event)"
               (input)="formatInput($event)"
               name="mortgage-amount"
@@ -30,6 +31,7 @@
                 class="w-full outline-0 px-4 text-2xl font-bold" 
                 type="text"
                 pattern="[0-9]*" 
+                inputmode="numeric"
                 (keypress)="manageInput($event)"
                 (input)="formatInput($event)"
                 #mortageTermInput>
@@ -56,10 +58,9 @@
           <span class="text-[1.5rem] font-bold">Repayment</span>
         </label>
 
-
         <label class="my-2 flex border rounded-md cursor-pointer p-5 gap-3 hover:outline-[1.5px] active:outline-[1.5px]">
-          <input class="h-full w-6" type="radio" name="mortgageType">
-          <label class="text-[1.5rem] font-bold" for="variable">Interest Only</label>
+          <input class="h-full w-6 text-blue-600 focus:ring-blue-500" type="radio" name="mortgageType">
+          <span class="text-[1.5rem] font-bold">Interest Only</span>
         </label>
       </div>
 
@@ -69,8 +70,17 @@
           Calculate Repayments
       </button>
     </form>
-    <div>
-      
+    <div class="">
+      <div class="bg-[#133040] p-10 grid place-items-center ">
+        <img class="h-60 w-60" src="assets/images/illustration-empty.svg" alt="empty">
+        <div class="text-center flex flex-col gap-5">
+          <p class="text-white text-2xl font-bold">Results shown here</p>
+          <p class="text-gray-400 text-xl text-center">
+            Complete the form and click "calculate repayments" 
+            to see what your monthly repayment would be
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section> 
