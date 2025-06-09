@@ -1,32 +1,17 @@
 <section class="font-jakarta">
-  <div class="flex flex-col  h-fit">
-    <form class="flex flex-col gap-10 px-7 py-10">
-      <div class="flex flex-col">
-        <h1 class="font-bold text-[2rem]">Mortgage Calculator</h1>
-        <a href="" ><p class="underline text-gray-400 text-xl">Clear All</p></a>
-      </div>
-
-      <!-- <div class="border flex flex-col gap-5"> -->
-        <div class="flex flex-col gap-1">
-          <label for="mortgage-amount" class="text-gray-500 text-2xl">Mortage Amount</label>
-          <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
-            <div class="bg-[#e3f4fc] text-[#405a68] py-4 px-8 rounded-l-md text-2xl font-bold">£</div>
-            <input 
-              class="w-full outline-0 px-4 text-2xl font-bold" 
-              type="text"
-              pattern="[0-9]*" 
-              inputmode="numeric"
-              (keypress)="manageInput($event)"
-              (input)="formatInput($event)"
-              name="mortgage-amount"
-              #mortageAmountInput>
-          </div>
+  <div class="lg:grid lg:place-items-center lg:bg-[#e3f4fc] h-screen">
+    <div class="lg:flex-row flex lg:m-20 lg:rounded-2xl lg:shadow flex-col h-fit bg-white">
+      <form class="lg:w-1/2 lg:rounded-l-2xl flex flex-col gap-10 px-7 py-10 bg-white">
+        <div class="lg:flex-row lg:items-center lg:justify-between flex flex-col">
+          <h1 class="font-bold text-[2rem]">Mortgage Calculator</h1>
+          <a href="" ><p class="underline text-gray-400 text-xl">Clear All</p></a>
         </div>
-
-        <div class="flex flex-col gap-8">
-          <div class="grid gap-1">
-            <label for="mortgage-term" class="text-gray-500 text-2xl">Mortage Term</label>
+  
+        <!-- <div class="border flex flex-col gap-5"> -->
+          <div class="flex flex-col gap-1">
+            <label for="mortgage-amount" class="text-gray-500 text-2xl">Mortage Amount</label>
             <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+              <div class="bg-[#e3f4fc] text-[#405a68] py-4 px-8 rounded-l-md text-2xl font-bold">£</div>
               <input 
                 class="w-full outline-0 px-4 text-2xl font-bold" 
                 type="text"
@@ -34,52 +19,90 @@
                 inputmode="numeric"
                 (keypress)="manageInput($event)"
                 (input)="formatInput($event)"
-                #mortageTermInput>
-              <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">years</div>
+                name="mortgage-amount"
+                #mortageAmountInput>
             </div>
           </div>
-          <div class="grid gap-1">
-            <label for="interest-rate" class="text-gray-500 text-2xl">Interest Rate</label>
-            <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
-              <input 
-                class="w-full outline-0 px-4 text-2xl font-bold" 
-                type="number" 
-                name="mortgage-amount" 
-                #interestRateInput>
-              <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">%</div>
+  
+          <div class="lg:flex-row flex flex-col gap-8">
+            <div class="grid gap-1">
+              <label for="mortgage-term" class="text-gray-500 text-2xl">Mortage Term</label>
+              <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+                <input 
+                  class="w-full outline-0 px-4 text-2xl font-bold" 
+                  type="text"
+                  pattern="[0-9]*" 
+                  inputmode="numeric"
+                  (keypress)="manageInput($event)"
+                  (input)="formatInput($event)"
+                  #mortageTermInput>
+                <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">years</div>
+              </div>
+            </div>
+            <div class="grid gap-1">
+              <label for="interest-rate" class="text-gray-500 text-2xl">Interest Rate</label>
+              <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+                <input 
+                  class="w-full outline-0 px-4 text-2xl font-bold" 
+                  type="number" 
+                  name="mortgage-amount" 
+                  #interestRateInput>
+                <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">%</div>
+              </div>
             </div>
           </div>
+  
+        <div class="grid">  
+          <label class="text-gray-500 text-2xl">Mortgage Type:</label>
+          <label class="my-2 flex border rounded-md cursor-pointer p-5 gap-3 hover:outline-[1.5px] active:outline-[1.5px]">
+            <input type="radio" name="mortgageType" class="h-full w-6" />
+            <span class="text-[1.5rem] font-bold">Repayment</span>
+          </label>
+  
+          <label class="my-2 flex border rounded-md cursor-pointer p-5 gap-3 hover:outline-[1.5px] active:outline-[1.5px]">
+            <input class="h-full w-6 text-blue-600 focus:ring-blue-500" type="radio" name="mortgageType">
+            <span class="text-[1.5rem] font-bold">Interest Only</span>
+          </label>
         </div>
-
-      <div class="grid">  
-        <label class="text-gray-500 text-2xl">Mortgage Type:</label>
-        <label class="my-2 flex border rounded-md cursor-pointer p-5 gap-3 hover:outline-[1.5px] active:outline-[1.5px]">
-          <input type="radio" name="mortgageType" class="h-full w-6" />
-          <span class="text-[1.5rem] font-bold">Repayment</span>
-        </label>
-
-        <label class="my-2 flex border rounded-md cursor-pointer p-5 gap-3 hover:outline-[1.5px] active:outline-[1.5px]">
-          <input class="h-full w-6 text-blue-600 focus:ring-blue-500" type="radio" name="mortgageType">
-          <span class="text-[1.5rem] font-bold">Interest Only</span>
-        </label>
-      </div>
-
-      <button type="submit" 
-        class="bg-[#d7da2f] text-2xl flex p-5 rounded-full items-center justify-center gap-3 font-bold hover:bg-[#f1f381]">
-          <img src="assets/images/icon-calculator.svg" alt="calculator">
-          Calculate Repayments
-      </button>
-    </form>
-    <div class="">
-      <div class="bg-[#133040] p-10 grid place-items-center ">
-        <img class="h-60 w-60" src="assets/images/illustration-empty.svg" alt="empty">
-        <div class="text-center flex flex-col gap-5">
-          <p class="text-white text-2xl font-bold">Results shown here</p>
-          <p class="text-gray-400 text-xl text-center">
-            Complete the form and click "calculate repayments" 
-            to see what your monthly repayment would be
-          </p>
+  
+        <button type="submit" 
+          class="bg-[#d7da2f] text-2xl flex p-5 rounded-full items-center justify-center gap-3 font-bold hover:bg-[#f1f381]">
+            <img src="assets/images/icon-calculator.svg" alt="calculator">
+            Calculate Repayments
+        </button>
+      </form>
+      <div class="lg:w-1/2 bg-[#133040] p-10 lg:rounded-r-2xl lg:rounded-bl-[6rem] lg:grid lg:place-items-center">
+        <div class="grid place-items-center ">
+          <img class="h-60 w-60" src="assets/images/illustration-empty.svg" alt="empty">
+          <div class="text-center flex flex-col gap-5">
+            <p class="text-white text-2xl font-bold">Results shown here</p>
+            <p class="text-gray-400 text-xl text-center">
+              Complete the form and click "calculate repayments" 
+              to see what your monthly repayment would be
+            </p>
+          </div>
         </div>
+        <!-- <div class="flex flex-col gap-7">
+          <div class="text-start flex flex-col gap-5">
+            <p class="text-white text-2xl font-bold">Your results</p>
+            <p class="text-gray-400 text-xl">
+              Your results are shown below based on the information
+              you provided. To adjust the results, edit the form and click
+              "calculate repayments" again
+            </p>
+          </div>
+          <div class="rounded-lg p-5 bg-[#0e2431] flex flex-col gap-5 border-t-5 border-[#dad929]">
+            <div class="py-2 flex flex-col gap-2">
+              <caption class="w-full text-start text-gray-400">Your monthly repayments</caption>
+              <p class="md:text-[6rem] text-4xl font-bold text-[#dad929]">£1,797.74</p>
+            </div>
+            <hr class="text-gray-500">
+            <div class="py-2 flex flex-col gap-2">
+              <caption class="w-full text-start text-gray-400">Total you'll repay over the term</caption>
+              <p class="text-2xl font-bold text-white">£539,322.94</p>
+            </div>          
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
