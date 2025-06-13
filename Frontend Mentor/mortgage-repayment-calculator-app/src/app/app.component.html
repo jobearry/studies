@@ -8,49 +8,49 @@
         </div>
   
         <!-- <div class="border flex flex-col gap-5"> -->
-          <div class="flex flex-col gap-1">
-            <label for="mortgage-amount" class="text-gray-500 text-2xl">Mortage Amount</label>
+        <div class="flex flex-col gap-1">
+          <label for="mortgage-amount" class="text-gray-500 text-2xl">Mortage Amount</label>
+          <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+            <div class="bg-[#e3f4fc] text-[#405a68] py-4 px-8 rounded-l-md text-2xl font-bold">£</div>
+            <input 
+              class="w-full outline-0 px-4 text-2xl font-bold" 
+              type="text"
+              pattern="[0-9]*" 
+              (keypress)="manageInput($event)"
+              (input)="onAmountInput($event)"
+              [value]="mortgageAmount"
+              name="mortgage-amount"
+              #mortageAmountInput>
+          </div>
+        </div>
+
+        <div class="lg:flex-row flex flex-col gap-8">
+          <div class="grid gap-1">
+            <label for="mortgage-term" class="text-gray-500 text-2xl">Mortage Term</label>
             <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
-              <div class="bg-[#e3f4fc] text-[#405a68] py-4 px-8 rounded-l-md text-2xl font-bold">£</div>
               <input 
                 class="w-full outline-0 px-4 text-2xl font-bold" 
                 type="text"
                 pattern="[0-9]*" 
-                inputmode="numeric"
                 (keypress)="manageInput($event)"
-                (input)="formatInput($event)"
-                name="mortgage-amount"
-                #mortageAmountInput>
+                (input)="onTermInput($event)"
+                [value]="mortgageTerm"
+                #mortageTermInput>
+              <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">years</div>
             </div>
           </div>
-  
-          <div class="lg:flex-row flex flex-col gap-8">
-            <div class="grid gap-1">
-              <label for="mortgage-term" class="text-gray-500 text-2xl">Mortage Term</label>
-              <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
-                <input 
-                  class="w-full outline-0 px-4 text-2xl font-bold" 
-                  type="text"
-                  pattern="[0-9]*" 
-                  inputmode="numeric"
-                  (keypress)="manageInput($event)"
-                  (input)="formatInput($event)"
-                  #mortageTermInput>
-                <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">years</div>
-              </div>
-            </div>
-            <div class="grid gap-1">
-              <label for="interest-rate" class="text-gray-500 text-2xl">Interest Rate</label>
-              <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
-                <input 
-                  class="w-full outline-0 px-4 text-2xl font-bold" 
-                  type="number" 
-                  name="mortgage-amount" 
-                  #interestRateInput>
-                <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">%</div>
-              </div>
+          <div class="grid gap-1">
+            <label for="interest-rate" class="text-gray-500 text-2xl">Interest Rate</label>
+            <div class="flex border rounded-md hover:outline-[1.5px] active:outline-[1.5px] cursor-pointer">
+              <input 
+                class="w-full outline-0 px-4 text-2xl font-bold" 
+                name="interest-rate" 
+                (keypress)="manageInput($event)"
+                #interestRateInput>
+              <div class="bg-[#e3f4fc] py-4 text-[#405a68] px-8 rounded-r-md text-2xl font-bold">%</div>
             </div>
           </div>
+        </div>
   
         <div class="grid">  
           <label class="text-gray-500 text-2xl">Mortgage Type:</label>

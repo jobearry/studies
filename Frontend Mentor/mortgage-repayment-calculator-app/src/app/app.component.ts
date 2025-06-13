@@ -9,6 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+  mortgageAmount = ""
+  mortgageTerm = ""
 
   manageInput(e: KeyboardEvent){
     console.log(e.key)
@@ -18,10 +20,15 @@ export class AppComponent {
     }
   }
 
-  formatInput(e: any){
-    const element = e.target as HTMLInputElement
-    const raw = element.value.replace(/,/g, '');
-    element.value = Number(raw).toLocaleString()
+  onAmountInput(event: Event) {
+    const raw = (event.target as HTMLInputElement).value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    this.mortgageAmount = raw;
   }
+
+  onTermInput(event: Event) {
+    const raw = (event.target as HTMLInputElement).value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    this.mortgageTerm = raw 
+  }
+
 }
  
