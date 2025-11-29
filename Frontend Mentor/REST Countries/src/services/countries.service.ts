@@ -1,5 +1,5 @@
 type API_ROOT = string
-const  root: API_ROOT = "https://restcountries.com/v3.1";
+const  root: API_ROOT = "/data";
 export const fetchAll = async <T>(endpoint: string): Promise<T> => {
   try {
     const response = await fetch(`${root}/${endpoint}`);
