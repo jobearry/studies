@@ -2,7 +2,6 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
@@ -46,6 +45,11 @@ li {
 h1 {
   font-size: 48px;
   color: #f9faf8;
+}
+
+footer > p{
+  width: 100%;
+  text-align: center;
 }
 
 .hero {
@@ -138,4 +142,49 @@ h1 {
   width: 10rem;
   border: 3px solid #3882f6;
   border-radius: 10px;
+}
+
+/* quote */
+.quote{
+  padding: 5rem 10rem;
+  background-color: #e5e7eb;
+}
+.quote p{
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 300;
+  font-style: italic;
+}
+
+figcaption{
+  font-weight: 900;
+  color: #1f2937;
+  text-align: end;
+}
+
+/* call to action */
+.cta > div {
+  margin: 5rem 5rem;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  border-radius: 10px;
+}
+
+.cta > div > div {
+  padding: 3rem 5rem;
+}
+.cta > div > a {
+  border: 2px solid #e5e7eb;
+  padding: .5rem 1.5rem;
+  border-radius: 8px;
+  margin: 3rem 5rem;
+
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
 }
