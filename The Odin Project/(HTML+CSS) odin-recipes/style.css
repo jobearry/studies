@@ -8,10 +8,9 @@
 body {
     background: #1f1f1f;
     color: #afafaf;
-}
-
-body *{
-    margin: .75rem;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 720px;
 }
 
 body ul{
@@ -21,4 +20,9 @@ body ul{
 body a {
     text-decoration: none;
     color: #e4a36f;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
