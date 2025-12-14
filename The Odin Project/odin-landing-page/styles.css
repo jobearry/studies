@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background-color: #f9faf8;
+}
+
+nav,
+footer {
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #1f2937;
+}
+
+nav,
+footer,
+section {
+  color: white;
+
+  display: flex;
+  padding: 1rem 10rem;
+
+}
+
+nav>ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: .25rem;
+
+  color: #c2c2c2;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+.hero {
+  /* flex-direction: column; */
+  background-color: #1f2937;
+  text-align: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding: 7rem 10rem;
+  
+}
+
+.hero>header {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  text-align: start;
+
+}
+
+.hero p {
+  font-size: 18px;
+  color: #c2c2c2;
+
+  width: 100%;
+}
+
+.hero>header a {
+  text-decoration: none;
+  color: #f9faf8;
+
+  background-color: #3882f6;
+  padding: .5rem 1.5rem;
+  border-radius: 8px;
+
+  flex: 0 0 0%;
+  align-self: flex-start;
+}
+
+.hero-item {
+  flex: 1 0 0%;
+}
+
+.hero> :last-child {
+  background-color: #6d747d;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+/* gallery */
+.gallery{
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+  align-items: center;
+
+  gap: 3rem;
+
+  padding: 2rem 10rem;
+  padding-bottom: 7rem;
+}
+.gallery>h2{
+  font-size: 36px;
+  font-weight: 900;
+
+  color: #1f2937;
+}
+
+.gallery > div{
+  display: flex;
+  gap: 5rem;
+  
+}
+
+.gallery > div > div p{
+  color: #6d747d;
+  text-align: center;
+}
+
+.gallery > div > div{
+  width: 10rem;
+}
+
+.gallery > div > div > div {
+  height: 10rem;
+  width: 10rem;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+}
